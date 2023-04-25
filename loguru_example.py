@@ -1,5 +1,6 @@
 from loguru import logger
 
+
 def divide(a, b):
     try:
         result = a / b
@@ -9,6 +10,7 @@ def divide(a, b):
         logger.error(f"Attempted to divide by zero: {a} / {b}")
         return None
 
+
 def main():
     logger.add("application.log", rotation="10 MB")
 
@@ -16,6 +18,7 @@ def main():
 
     for num1, num2 in numbers:
         divide(num1, num2)
+
 
 if __name__ == "__main__":
     main()
