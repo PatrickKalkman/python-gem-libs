@@ -3,3 +3,4 @@ loguru==0.7.0
 pydantic==1.10.7
 rich==13.3.4
 typer==0.7.0
+streamlit==1.21.0
